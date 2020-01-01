@@ -1,0 +1,40 @@
+# Write your code here :-)
+from microbit import *
+import time
+
+# Give our pins better names
+green_pin = pin0
+red_pin = pin1
+yellow_pin = pin2
+
+# Main program loop
+# This "while" loop will continue forever, running your program.
+while True:
+    
+    if button_a.is_pressed()
+        
+        # Turn on the Green light for 3 seconds
+        green_pin.write_digital(1)
+        yellow_pin.write_digital(0)
+        red_pin.write_digital(0)
+        time.sleep(3)
+        
+        # Turn on the Yellow light for 3 seconds
+        green_pin.write_digital(0)
+        yellow_pin.write_digital(1)
+        red_pin.write_digital(0)
+        time.sleep(3)
+
+        # Turn on the Red light for 3 seconds
+        green_pin.write_digital(0)
+        yellow_pin.write_digital(0)
+        red_pin.write_digital(1)
+        time.sleep(3)
+        
+    else:
+        
+        # Turn everything off
+        green_pin.write_digital(0)
+        yellow_pin.write_digital(0)
+        red_pin.write_digital(0)
+    
